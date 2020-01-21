@@ -88,4 +88,13 @@ public class ReservaService {
 		return this.reservaRepository.find(fechaInicio, fechaSalida);
 	}
 	
+	/**
+	 * Método para consultar una reserva por su código de reserva
+	 * @param codigoReserva
+	 * @return
+	 */
+	public Reserva findByCodigoRes(String codigoReserva) {
+		return this.reservaRepository.findByCodigoRes(codigoReserva);
+	}
+	
 }
